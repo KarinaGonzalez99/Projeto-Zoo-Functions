@@ -28,4 +28,7 @@ describe('Testes da função HandlerElephants', () => {
   it('Verifica 9', () => {
     expect(handlerElephants('elephant')).not.toBe(undefined);
   });
+  it('Verifica 10', () => {
+    expect(typeof handlerElephants).toBe('function');
+  });
 });
