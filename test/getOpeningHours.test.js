@@ -18,11 +18,11 @@ describe('Testes da função getOpeningHours', () => {
   });
 
   it('Verifica 5', () => {
-    expect(getOpeningHours('Wednesday', '07:00-PM')).toBe('The zoo is closed');
+    expect(getOpeningHours('Monday', '07:00-PM')).toBe('The zoo is closed');
   });
 
   it('Verifica 6', () => {
-    expect(() => getOpeningHours('Wednesday', 'what')).toThrow(new Error('The what should represent a number'));
+    expect(() => getOpeningHours('Wednesday', 'what-PM')).toThrow(new Error('The hour should represent a number'));
   });
 
   it('Verifica 7', () => {
@@ -31,5 +31,9 @@ describe('Testes da função getOpeningHours', () => {
 
   it('Verifica 8', () => {
     expect(() => getOpeningHours('cachorrinho', '08:00-AM')).toThrow(new Error('The day must be valid. Example: Monday'));
+  });
+
+  it('Verifica 9', () => {
+    expect(getOpeningHours()).toBe('hours');
   });
 });
