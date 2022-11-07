@@ -6,7 +6,8 @@ const animais = {};
 
 function countAnimals(animal) {
   if (!animal) {
-    species.forEach((bichinhus) => { animais[bichinhus.name] = bichinhus.residents.length;
+    species.forEach((bichinhus) => {
+      animais[bichinhus.name] = bichinhus.residents.length;
     });
     return animais;
   }
