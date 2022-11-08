@@ -12,9 +12,8 @@ function bichin(day) {
 }
 
 function dias() {
-  const diasebichinhuss = {
-    Monday: { officeHour: 'CLOSED', exhibition: 'The zoo will be closed!' },
-    Tuesday: { officeHour: `Open from ${hours.Tuesday.open}am until ${hours.Tuesday.close}pm`, 
+  const diasebichinhuss = { Monday: { officeHour: 'CLOSED', exhibition: 'The zoo will be closed!' },
+    Tuesday: { officeHour: `Open from ${hours.Tuesday.open}am until ${hours.Tuesday.close}pm`,
       exhibition: bichin('Tuesday') },
     Wednesday: { officeHour: `Open from ${hours.Wednesday.open}am until ${hours.Wednesday.close}pm`,
       exhibition: bichin('Wednesday') },
@@ -26,7 +25,6 @@ function dias() {
       exhibition: bichin('Saturday') },
     Sunday: { officeHour: `Open from ${hours.Sunday.open}am until ${hours.Sunday.close}pm`,
       exhibition: bichin('Sunday') },
-
   };
   return diasebichinhuss;
 }
