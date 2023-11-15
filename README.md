@@ -1,6 +1,6 @@
 # Projeto Zoo Functions
 <p align="center">
-  <img src="https://media.tenor.com/your-gif-link.gif" alt="GIF relacionado a animais e zoológicos"/>
+  <img src="https://media.tenor.com/9X-I0mcc_OgAAAAC/dog-funny.gif" alt="GIF divertido de auau"/>
 </p>
 
 ## Visão Geral
